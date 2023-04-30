@@ -1,0 +1,349 @@
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: gall sans, sans-serif;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+footer {
+  margin-bottom: 150px;
+}
+
+footer:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+/**
+============= EXAMPLE 1 ==================*/
+/* footer */
+footer.example-1 {
+  font-family: Tahoma, sans-serif;
+  background-color: #193549;
+  padding: 90px 0 0;
+}
+
+footer.example-1 .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  footer.example-1 .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+footer.example-1 .footer-container p, footer.example-1 .footer-container a, footer.example-1 .footer-container h4 {
+  color: #FFFFFF;
+}
+
+footer.example-1 .footer-container h4 {
+  margin: 0 0 10px;
+}
+
+footer.example-1 .footer-container p, footer.example-1 .footer-container a {
+  font-size: 16px;
+}
+
+footer.example-1 .footer-container img {
+  max-width: 200px;
+}
+
+footer.example-1 .footer-container .footer-col {
+  margin: 0 15px 60px;
+  padding: 30px;
+  border-radius: 4px;
+  background: #15232D;
+  -webkit-box-shadow: 2px 2px 2px #15232D;
+          box-shadow: 2px 2px 2px #15232D;
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  footer.example-1 .footer-container .footer-col {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+}
+
+footer.example-1 .footer-container .footer-col ul li {
+  list-style: none;
+}
+
+footer.example-1 .bottombar {
+  padding: 20px 15px;
+  background-color: #070e14;
+  text-align: center;
+  font-style: italic;
+  color: #FFFFFF;
+  font-size: .9em;
+}
+
+footer.example-2 {
+  font-family: Georgia, serif;
+  background-color: #222;
+  padding: 90px 15px 30px;
+}
+
+footer.example-2 .site-footer--content {
+  max-width: 1600px;
+  display: block;
+  margin: 0 auto;
+  color: #FFF;
+  border-bottom: 1px solid #0000004D;
+}
+
+@media screen and (min-width: 768px) {
+  footer.example-2 .site-footer--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+footer.example-2 .site-footer--content .footer-left {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+footer.example-2 .site-footer--content .footer-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #E0E0E0;
+}
+
+footer.example-2 .site-footer--content .footer-right {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: right;
+}
+
+footer.example-2 .site-footer--content a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer.example-2 .copyright-notice {
+  padding-top: 20px;
+  text-align: center;
+  color: #7A7A7A;
+  border-top: 1px solid #FFFFFF0D;
+}
+
+footer.example-3 {
+  font-family: Georgia, serif;
+  background-color: #213343;
+  padding: 90px 15px;
+}
+
+footer.example-3 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer.example-3 .main-content-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 20px;
+}
+
+footer.example-3 .main-content-area .holder h3 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+footer.example-3 .main-content-area .holder ul {
+  padding: 0;
+}
+
+footer.example-3 .main-content-area .holder ul li {
+  list-style: none;
+}
+
+footer.example-3 .main-content-area .holder ul li a {
+  font-size: .85rem;
+  font-weight: bold;
+  color: #b6c7d6;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.3rem 0;
+  display: inline-block;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+footer.example-3 .main-content-area .holder ul li a:hover {
+  text-decoration: underline;
+  color: #95ECEC;
+}
+
+footer.example-3 .social-media-links {
+  position: relative;
+  margin-top: 60px;
+}
+
+footer.example-3 .social-media-links ul {
+  max-width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer.example-3 .social-media-links ul::before {
+  width: 20%;
+  position: absolute;
+  content: '';
+  border-top: 1px solid #FF0000;
+  top: 50%;
+  left: 0;
+}
+
+footer.example-3 .social-media-links ul::after {
+  width: 20%;
+  position: absolute;
+  content: '';
+  border-top: 1px solid #FF0000;
+  top: 50%;
+  right: 0;
+}
+
+footer.example-3 .social-media-links ul li {
+  list-style: none;
+}
+
+footer.example-3 .social-media-links ul li a img {
+  max-width: 20px;
+}
+
+@media (min-width: 768px) {
+  footer.example-3 .social-media-links ul li a img {
+    max-width: 30px;
+  }
+}
+
+footer.example-3 .copyright {
+  font-family: Verdana, sans-serif;
+  margin-top: 45px;
+  text-align: center;
+}
+
+footer.example-3 .copyright img {
+  max-width: 200px;
+}
+
+footer.example-3 .copyright p {
+  color: #b6c7d6;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+footer.example-3 .copyright ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer.example-3 .copyright ul li {
+  list-style: none;
+}
+
+footer.example-3 .copyright ul li a {
+  color: #FFFFFF;
+  font-weight: bold;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  margin-right: 20px;
+}
+
+footer.example-3 .copyright ul li a:hover {
+  color: #95ECEC;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
